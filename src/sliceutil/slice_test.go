@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/timhi/swiss-army-knife/m/v2/src/sliceutil"
+	"github.com/timhi/swiss-army-knife/src/sliceutil"
 )
 
 var TestBloatSliceData = []struct {

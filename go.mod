@@ -1,4 +1,4 @@
-module github.com/timhi/swiss-army-knife/m/v2
+module github.com/timhi/swiss-army-knife
 
 go 1.19
 
