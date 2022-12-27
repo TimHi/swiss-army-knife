@@ -7,6 +7,7 @@ type Point struct {
 	Y int
 }
 
+// Calculate the manhattan distance to a given destination.
 func (orig Point) ManhattanDistance(dest Point) int {
 	return distance.GetManhattanDistance(orig.X, orig.Y, dest.X, dest.Y)
 }
