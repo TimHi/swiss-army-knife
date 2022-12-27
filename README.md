@@ -5,7 +5,11 @@
 ![Image of multiple red swiss army knifes]("./../assets/paul-felberbauer-tM16SjCYy84-unsplash.jpg)
 
 Photo by [Paul Felberbauer](https://unsplash.com/@servuspaul?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tM16SjCYy84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-  
+
+## Installation
+
+`go get github.com/timhi/swiss-army-knife` 
+
 ## What this is
 
 A collection of helper functions and reusable code, collected during Advent of Code and developing other bug riddled software.
