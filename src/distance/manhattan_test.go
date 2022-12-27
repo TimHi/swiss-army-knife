@@ -20,6 +20,7 @@ var TestManhattanDistance = []struct {
 	{x1: 0, y1: 0, x2: 0, y2: 1, result: 1},
 	{x1: 0, y1: 0, x2: 0, y2: -1, result: 1},
 	{x1: 0, y1: 0, x2: 0, y2: 5, result: 5},
+	{x1: -1, y1: 0, x2: 0, y2: 5, result: 6},
 }
 
 func TestGetManhattanDistance(t *testing.T) {
