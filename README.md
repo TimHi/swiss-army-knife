@@ -11,4 +11,4 @@ Use on your own risk, test coverage could be better.
 
 ## What this isn't
 
-A well tested package used to tackle serious problems.
+A well tested package used to tackle serious problems. 
