@@ -1,6 +1,6 @@
 # Swiss Army Knife
 
-![Image of multiple red swiss army knifes]("./../assets/paul-felberbauer-tM16SjCYy84-unsplash.jpg")
+![Image of multiple red swiss army knifes]("./../assets/paul-felberbauer-tM16SjCYy84-unsplash.jpg)
 
 Photo by [Paul Felberbauer](https://unsplash.com/@servuspaul?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tM16SjCYy84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
   
