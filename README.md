@@ -12,7 +12,7 @@ Photo by [Paul Felberbauer](https://unsplash.com/@servuspaul?utm_source=unsplash
 
 ## What this is
 
-A collection of helper functions and reusable code, collected during Advent of Code and developing other bug riddled software.
+A collection of helper functions and reusable code, collected during [Advent of Code](https://github.com/TimHi/AdventOfCode) and developing other bug riddled software.
 Use on your own risk, test coverage could be better.
 
 ## What this isn't
