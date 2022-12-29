@@ -47,15 +47,24 @@ func ParseInt64WithError(s string) (int64, error) {
 	return i, nil
 }
 
+// Checks wether a given string is empty.
 func NotEmpty(s string) bool {
 	return len(s) > 0
 }
 
+// Test wether a given string contains only of uppercase characters.
+// Empty strings are considered as not uppercase.
 func IsUpper(s string) bool {
+
+	if !NotEmpty(s) {
+		return false
+	}
+
 	for _, r := range s {
 		if !unicode.IsUpper(r) && unicode.IsLetter(r) {
 			return false
 		}
 	}
+
 	return true
 }
