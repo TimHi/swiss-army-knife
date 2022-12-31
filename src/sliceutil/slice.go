@@ -70,6 +70,9 @@ func ReverseSlice[T any](s []T) {
 }
 
 func Remove(slice []int, s int) []int {
+	if len(slice) == 0 {
+		return slice
+	}
 	return append(slice[:s], slice[s+1:]...)
 }
 

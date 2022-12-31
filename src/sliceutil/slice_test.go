@@ -49,3 +49,19 @@ func TestStringToIntFail(t *testing.T) {
 	in := []string{"NaN"}
 	assert.Panics(t, func() { sliceutil.StringToIntSlice(in) })
 }
+
+var TestRemoveData = []struct {
+	in       []int
+	position int
+	out      []int
+}{
+	{[]int{}, 0, []int{}},
+	{[]int{1, 0, -1, 2}, 3, []int{1, 0, -1}},
+}
+
+func TestRemove(t *testing.T) {
+	for _, testData := range TestRemoveData {
+		r := sliceutil.Remove(testData.in, testData.position)
+		assert.Equal(t, testData.out, r, "Remove failed!")
+	}
+}
