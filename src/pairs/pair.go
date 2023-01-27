@@ -8,13 +8,19 @@ type Pair struct {
 	Value int
 }
 
-func SortMapToPairs(elfMap map[int]int) PairList {
-	pl := make(PairList, len(elfMap))
+func SortMapToPairs(mapToSort map[int]int) PairList {
+	pl := make(PairList, len(mapToSort))
 	i := 0
-	for k, v := range elfMap {
+	for k, v := range mapToSort {
 		pl[i] = Pair{Key: k, Value: v}
 		i++
 	}
+	sort.Sort(pl)
+	return pl
+}
+
+func SortMapToPairsReversed(mapToSort map[int]int) PairList {
+	pl := SortMapToPairs(mapToSort)
 	sort.Sort(sort.Reverse(pl))
 	return pl
 }
