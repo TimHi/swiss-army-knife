@@ -50,3 +50,35 @@ func TestIsBigger(t *testing.T) {
 		assert.Equal(t, testData.result, r, m)
 	}
 }
+
+type testStruct struct {
+	Field1 string
+	Field2 int
+}
+
+func TestInterfaceSliceNonSlice(t *testing.T) {
+	nonSlice := testStruct{
+		Field1: "test",
+		Field2: 42,
+	}
+	result := func() { gen.InterfaceSlice(nonSlice) }
+
+	assert.Panics(t, result, "Non slice Type did not panic")
+}
+
+func TestInterfaceSliceNil(t *testing.T) {
+	var nilSlice []interface{} = nil
+	result := gen.InterfaceSlice(nilSlice)
+	assert.Nil(t, result, "Nil slice returned a non nil result")
+}
+
+func TestClone(t *testing.T) {
+
+	original := testStruct{
+		Field1: "test",
+		Field2: 42,
+	}
+	clone := gen.Clone(original)
+	assert.NotSame(t, original, clone)
+	assert.Equal(t, original, clone)
+}
